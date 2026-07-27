@@ -53,7 +53,7 @@ def get_all_companies(conn):
 
 def get_company_by_name(conn, company_name):
     return conn.execute(
-        "SELECT * FROM companies WHERE company_name = ?", (company_name,)
+        "SELECT * FROM companies WHERE company_name = ? COLLATE NOCASE", (company_name,)
     ).fetchone()
 
 

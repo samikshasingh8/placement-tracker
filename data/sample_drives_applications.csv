@@ -1,0 +1,6 @@
+company_name,sector,drive_date,role_offered,package_lpa,eligible_branches,min_cgpa,roll_number,current_status,applied_date,final_package_lpa
+Google,Product,2026-08-15,SDE-1,28,"CSE,CSE-AI",7.5,22CSAI001,Selected,2026-07-20,28
+Google,Product,2026-08-15,SDE-1,28,"CSE,CSE-AI",7.5,22CSAI002,Interview Scheduled,2026-07-20,
+ tcs ,IT Services,2026-08-01,Ninja,3.6,"CSE,CSE-AI,ECE,IT",6.0,22cse015,Applied,2026-07-18,
+TCS,IT Services,2026-08-01,Ninja,3.6,"CSE,CSE-AI,ECE,IT",6.0,22ECE034,Rejected,2026-07-18,
+Amazon,Product,2026-08-20,SDE-1,32,"CSE,CSE-AI,IT",7.0,22IT021,Applied,2026-07-25,

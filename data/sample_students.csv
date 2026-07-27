@@ -1,0 +1,7 @@
+roll_number,name,branch,batch_year,cgpa,email,phone,active_backlogs
+22csai001,  Riya Sharma ,cse-ai,2027,8.7,riya.sharma@example.edu,9876543210,0
+22CSAI002,Arjun Mehta,CSE-AI,2027,9.1,arjun.mehta@example.edu,9876543211,0
+22cse015,Kabir Singh,cse,2027,7.5,kabir.singh@example.edu,9876543212,1
+22ECE034,Sana Iqbal, ECE ,2027,8.2,sana.iqbal@example.edu,,0
+22CSAI002,Arjun Mehta,CSE-AI,2027,9.1,arjun.mehta@example.edu,9876543211,0
+22IT021,Dev Patel,IT,2027,,dev.patel@example.edu,9876543214,0
