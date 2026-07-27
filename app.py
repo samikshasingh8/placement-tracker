@@ -1,6 +1,6 @@
 import streamlit as st
 from src.db_utils import get_connection
-from src.queries import get_applications_full, get_branches, get_company_names, get_drive_statuses
+from src.queries import get_applications_full, get_branches, get_company_names, get_drive_statuses, get_student_roster
 
 st.set_page_config(page_title="Placement Tracker", layout="wide")
 st.title("Placement Tracker Dashboard")
@@ -31,8 +31,16 @@ col1.metric("Total applications", len(filtered))
 col2.metric("Selected", (filtered["current_status"] == "Selected").sum())
 col3.metric("Unique students", filtered["roll_number"].nunique())
 
-# ---------- Main table ----------
-st.subheader("Applications")
-st.dataframe(filtered, use_container_width=True)
+# ---------- Main tables ----------
+tab_apps, tab_roster = st.tabs(["Applications", "All students"])
+
+with tab_apps:
+    st.dataframe(filtered, use_container_width=True)
+
+with tab_roster:
+    roster = get_student_roster(conn)
+    if branches:
+        roster = roster[roster["branch"].isin(branches)]
+    st.dataframe(roster, use_container_width=True)
 
 conn.close()
