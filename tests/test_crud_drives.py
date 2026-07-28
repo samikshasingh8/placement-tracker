@@ -43,3 +43,10 @@ def test_drive_requires_valid_company(conn):
     import sqlite3
     with pytest.raises(sqlite3.IntegrityError):
         add_drive(conn, 999, "2026-08-15")  # company_id 999 doesn't exist
+        
+def test_update_drive_with_no_fields_is_a_no_op(conn):
+    company_id = add_company(conn, "NoChangeDriveCo")
+    drive_id = add_drive(conn, company_id, "2026-08-10", drive_status="Upcoming")
+    update_drive(conn, drive_id)  # deliberately no keyword args
+    drive = get_drive_by_id(conn, drive_id)
+    assert drive[7] == "Upcoming"

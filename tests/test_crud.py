@@ -35,3 +35,9 @@ def test_duplicate_roll_number_rejected(conn):
     add_student(conn, "22CSAI005", "Dev Patel", "CSE-AI", 2027)
     with pytest.raises(sqlite3.IntegrityError):
         add_student(conn, "22CSAI005", "Another Person", "CSE-AI", 2027)
+        
+def test_update_student_with_no_fields_is_a_no_op(conn):
+    student_id = add_student(conn, "22CSAI006", "No Change", "CSE-AI", 2027, cgpa=7.0)
+    update_student(conn, student_id)  # deliberately no keyword args
+    student = get_student_by_roll(conn, "22CSAI006")
+    assert student[5] == 7.0  # cgpa untouched

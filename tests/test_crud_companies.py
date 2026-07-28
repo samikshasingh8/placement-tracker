@@ -32,3 +32,9 @@ def test_duplicate_company_name_rejected(conn):
     add_company(conn, "Wipro")
     with pytest.raises(sqlite3.IntegrityError):
         add_company(conn, "Wipro")
+        
+def test_update_company_with_no_fields_is_a_no_op(conn):
+    company_id = add_company(conn, "NoChangeCo", sector="IT Services")
+    update_company(conn, company_id)  # deliberately no keyword args
+    company = get_company_by_name(conn, "NoChangeCo")
+    assert company[2] == "IT Services"

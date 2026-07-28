@@ -102,6 +102,10 @@ def test_drive_conversion_rate(conn):
     assert row["total_selected"] == 1
     assert row["conversion_rate_pct"] == 50.0
     
+def test_package_trends_returns_empty_df_when_no_selected_offers(conn):
+    trends = get_package_trends(conn)
+    assert trends.empty
+
 def test_drive_conversion_rate_handles_zero_applications(conn):
     company_id = add_company(conn, "NoApplicantsCo")
     drive_id = add_drive(conn, company_id, "2026-08-01", role_offered="SDE")
