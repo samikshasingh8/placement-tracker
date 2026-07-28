@@ -65,34 +65,6 @@ placement-tracker/
 └── requirements.txt
 ```
 
-## Setup & installation
-
-1. Clone the repo and enter it:
-```bash
-   git clone <your-repo-url>
-   cd placement-tracker
-```
-2. Create and activate a virtual environment:
-```bash
-   python -m venv .venv
-   # Windows:
-   .venv\Scripts\Activate.ps1
-   # Mac/Linux:
-   source .venv/bin/activate
-```
-3. Install dependencies:
-```bash
-   pip install -r requirements.txt
-```
-4. Create the database and load sample data:
-```bash
-   python db/setup_db.py
-   python db/load_sample_data.py
-```
-5. Run the app:
-```bash
-   streamlit run app.py
-```
 
 ## Testing
 
