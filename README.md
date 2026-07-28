@@ -5,7 +5,7 @@ tracking of campus placement drives — which companies are visiting, which stud
 applied and to which drives, current application status, and package offered.
 Built and used in my role as a TnP student coordinator.
 
-**Live demo:** _[link here once deployed]_
+**Live demo:** https://placement-tracker.streamlit.app/
 
 ## Features
 
