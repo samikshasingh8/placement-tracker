@@ -28,13 +28,11 @@ Python · SQLite · Pandas · Streamlit · Plotly · pytest / pytest-cov
 
 ## Screenshots
 
+<img width="1800" height="793" alt="image" src="https://github.com/user-attachments/assets/34a6c970-a6bf-4a40-a55d-5d1ff2549d9b" />
+<img width="1807" height="780" alt="image" src="https://github.com/user-attachments/assets/97002cb0-a56c-4252-8042-3c0f5a2a2e67" />
+<img width="1800" height="766" alt="image" src="https://github.com/user-attachments/assets/1390e6f0-ea77-4d52-b43a-b9c368629a3c" />
+<img width="1870" height="852" alt="image" src="https://github.com/user-attachments/assets/8f67b44e-01e8-4d2b-89f6-2a2f1b8c7cd7" />
 
-
-```markdown
-![Dashboard with filters](screenshots/dashboard.png)
-![Data entry form](screenshots/manage_data.png)
-![Visualizations page](screenshots/visualizations.png)
-```
 
 ## Database schema
 
