@@ -3,6 +3,9 @@ import plotly.express as px
 from src.db_utils import get_connection
 from src.queries import get_placement_rate_by_branch, get_package_trends, get_drive_conversion_rates
 
+from src.db_utils import ensure_database_ready
+ensure_database_ready()
+
 st.set_page_config(page_title="Visualizations", layout="wide")
 st.title("Placement Analytics")
 

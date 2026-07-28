@@ -4,6 +4,9 @@ from src.db_utils import get_connection
 from src.crud import add_student, add_company, add_drive, get_all_companies, update_application_status
 from src.queries import get_applications_full
 
+from src.db_utils import ensure_database_ready
+ensure_database_ready()
+
 st.set_page_config(page_title="Manage Data", layout="wide")
 st.title("Manage placement data")
 

@@ -1,6 +1,8 @@
 import streamlit as st
-from src.db_utils import get_connection
+from src.db_utils import get_connection, ensure_database_ready
 from src.queries import get_applications_full, get_branches, get_company_names, get_drive_statuses, get_student_roster
+
+ensure_database_ready()
 
 st.set_page_config(page_title="Placement Tracker", layout="wide")
 st.title("Placement Tracker Dashboard")
