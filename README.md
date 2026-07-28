@@ -28,7 +28,7 @@ Python · SQLite · Pandas · Streamlit · Plotly · pytest / pytest-cov
 
 ## Screenshots
 
-_[Add screenshots here once you have the app running — see instructions below]_
+
 
 ```markdown
 ![Dashboard with filters](screenshots/dashboard.png)
